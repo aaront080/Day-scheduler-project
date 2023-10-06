@@ -36,20 +36,43 @@ $(".saveBtn").on("click", function() {
     // attribute of each time-block be used to conditionally add or remove the
     // past, present, and future classes? How can Day.js be used to get the
     // current hour in 24-hour time?
-    //
+
+    function scheduleTracker() {
+     var currentHour = parseInt(dayjs().format('H'));
+
+      $(".time-block").each(function() {
+       var hourBlock = parseInt($(this).attr("id"));
+        console.log(typeof hourBlock)
+        console.log(typeof currentHour)
+        console.log(currentHour, hourBlock)
+
+        if (currentHour === hourBlock) {
+          $(this).addClass(".present");
+          $(this).removeClass(".past");
+          $(this).removeClass(".future")
+        }
+    })
+   } 
+
+    //console.log(currentHour)
+    //console.log(hourBlock)
+
+    console.log(scheduleTracker())
+  
+
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
     // attribute of each time-block be used to do this?
     
-    $("#hour9 .userInput").val(localStorage.getItem("hour9"));
-    $("#hour10 .userInput").val(localStorage.getItem("hour10"));
-    $("#hour11 .userInput").val(localStorage.getItem("hour11"));
-    $("#hour12 .userInput").val(localStorage.getItem("hour12"));
-    $("#hour13 .userInput").val(localStorage.getItem("hour13"));
-    $("#hour14 .userInput").val(localStorage.getItem("hour14"));
-    $("#hour15 .userInput").val(localStorage.getItem("hour15"));
-    $("#hour16 .userInput").val(localStorage.getItem("hour16"));
-    $("#hour17 .userInput").val(localStorage.getItem("hour17"));
+    $("#9 .userInput").val(localStorage.getItem("9"));
+    $("#10 .userInput").val(localStorage.getItem("10"));
+    $("#11 .userInput").val(localStorage.getItem("11"));
+    $("#12 .userInput").val(localStorage.getItem("12"));
+    $("#13 .userInput").val(localStorage.getItem("13"));
+    $("#14 .userInput").val(localStorage.getItem("14"));
+    $("#15 .userInput").val(localStorage.getItem("15"));
+    $("#16 .userInput").val(localStorage.getItem("16"));
+    $("#17 .userInput").val(localStorage.getItem("17"));
     
   });
 
