@@ -8,4 +8,4 @@ This project provided an opportunity to develop a simple yet useful application 
 
 ## Screenshot
 
-<img src="Day-scheduler.png width="300px">
+<img src="Day-scheduler.png" width="300px">
