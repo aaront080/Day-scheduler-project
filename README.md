@@ -15,9 +15,15 @@ This project provided an opportunity to develop a simple yet useful application 
 ## Credits
 
 -Xpert Learning Assistant for general questions and examples
+
 -[jQuery $(this) Selector Tutorial](https://youtu.be/TBVpCKNuPtw?si=egXY8IGIEjmEW45a)
+
 -[jQuery DOM Traversal Tutorial](https://youtu.be/Gq3Aez8sVpM?si=PwxxYNQ6r_lB_rE3)
+
 -[jQuery DOM Manipulation Tutorial](https://youtu.be/nRn2BC0cPfs?si=hIFvc399OwsmrU2g)
+
 -https://www.geeksforgeeks.org/difference-between-this-and-this-in-jquery/
+
 -https://www.w3schools.com/jsref/prop_win_localstorage.asp
+
 -https://www.delftstack.com/howto/jquery/jquery-local-storage/
