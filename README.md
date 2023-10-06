@@ -6,6 +6,7 @@ In this project, I designed a simple daily task scheduler. The simple scheduler 
 
 This project provided an opportunity to develop a simple yet useful application as it allows a person to keep track of their daily tasks during the work day. I was able to better understand how JS and jQuery could be leverage together to provide additonal functionality to a application.
 
+**View deployed link [HERE.](https://aaront080.github.io/Day-scheduler-project/)
 ## Screenshot
 
 <img src="Day-scheduler.png" width="600px">
