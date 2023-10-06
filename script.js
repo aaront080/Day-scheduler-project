@@ -16,7 +16,7 @@ $(".saveBtn").on("click", function() {    //click event triggers function to log
 
   console.log(this);                         
   var userInput = $(this).siblings(".userInput").val()  //captures value of user input
-  var hourNum = $(this).parent().attr("id");         //captures the time hour block user input was entered in
+  var hourNum = $(this).parent().attr("id");         //captures the time hour where user input was entered in
 
   localStorage.setItem(hourNum, userInput)  //stores info to local storage
 })
@@ -24,16 +24,16 @@ $(".saveBtn").on("click", function() {    //click event triggers function to log
   
 
     function scheduleTracker() {
-     var currentHour = parseInt(dayjs().format('H'));  //the current hour of day in 24 hour format converted to nu››
+     var currentHour = parseInt(dayjs().format('H'));  //the current hour of day in 24 hour format converted to number using parseInt()
 
       $(".time-block").each(function() {
-       var hourBlock = parseInt($(this).attr("id"));  //the ID of each time block converted into a number 
+       var hourBlock = parseInt($(this).attr("id"));  //the ID of each time block converted into a number using parseInt
         //console.log(typeof hourBlock) 
         //console.log(typeof currentHour)
-        console.log(currentHour, hourBlock)
+        console.log(currentHour, hourBlock)   
 
         if (currentHour === hourBlock) {       //if statements that will apply different classes depending on
-          $(this).addClass("present");         //what the current hour of the day it is (in 24 hour format)
+          $(this).addClass("present");         //what the current hour of the day it is (in 24 hour format) compared to the hour block the task was entered on
           $(this).removeClass("past");
           $(this).removeClass("future")
         } else if (currentHour < hourBlock) {
@@ -58,7 +58,7 @@ $(".saveBtn").on("click", function() {    //click event triggers function to log
 
     
     $("#9 .userInput").val(localStorage.getItem("9"));
-    $("#10 .userInput").val(localStorage.getItem("10"));
+    $("#10 .userInput").val(localStorage.getItem("10"));  //calls items from local storage
     $("#11 .userInput").val(localStorage.getItem("11"));
     $("#12 .userInput").val(localStorage.getItem("12"));
     $("#13 .userInput").val(localStorage.getItem("13"));
