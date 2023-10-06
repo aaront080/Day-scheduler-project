@@ -24,7 +24,7 @@ $(".saveBtn").on("click", function() {    //click event triggers function to log
   
 
     function scheduleTracker() {
-     var currentHour = parseInt(dayjs().format('H'));  //the current hour of day in 24 hour format
+     var currentHour = parseInt(dayjs().format('H'));  //the current hour of day in 24 hour format converted to nu››
 
       $(".time-block").each(function() {
        var hourBlock = parseInt($(this).attr("id"));  //the ID of each time block converted into a number 
@@ -55,7 +55,7 @@ $(".saveBtn").on("click", function() {    //click event triggers function to log
 
 
   
-=
+
     
     $("#9 .userInput").val(localStorage.getItem("9"));
     $("#10 .userInput").val(localStorage.getItem("10"));
